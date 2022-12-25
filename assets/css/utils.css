@@ -1,0 +1,82 @@
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --gray: #141B22;
+    --black: #000000 !important;
+    --primary: #21E786 !important;
+    --secondary: #8DCD39 !important;
+}
+
+
+/* FONTS */
+@font-face {
+   font-family: 'Aristotelica Display';
+   src: url("../fonts/Zetafonts - Aristotelica Pro Display Extralight.otf") format("truetype");
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: 'Aristotelica CND';
+   src: url("../fonts/Zetafonts - AristotelicaPro CndText Extralight.otf") format("truetype");
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: 'Aristotelica';
+   src: url("../fonts/Zetafonts - Aristotelica Pro Text Extralight.otf") format("truetype");
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: 'Aristotelica';
+   src: url("../fonts/Arista-Pro-Alternate-Light-trial.ttf") format("truetype");
+   font-weight: 600;
+}
+
+@font-face {
+   font-family: 'Aristotelica';
+   src: url("../fonts/Arista-Pro-Alternate-Bold-trial.ttf") format("truetype");
+   font-weight: 800;
+}
+
+@font-face {
+   font-family: 'Arista';
+   src: url("../fonts/Arista-Pro-Light-trial.ttf") format("truetype");
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: 'Arista';
+   src: url("../fonts/Arista-Pro-Bold-trial.ttf") format("truetype");
+   font-weight: 600;
+}
+
+@font-face {
+   font-family: 'Arista';
+   src: url("../fonts/Arista-Pro-Fat-trial.ttf") format("truetype");
+   font-weight: 800;
+}
+
+@font-face {
+   font-family: 'Roboto';
+   src: url("../fonts/Roboto-Thin.ttf") format("truetype");
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: 'Roboto';
+   src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+   font-weight: 600;
+}
+
+@font-face {
+   font-family: 'Roboto';
+   src: url("../fonts/Roboto-Medium.ttf") format("truetype");
+   font-weight: 700;
+}
+
+@font-face {
+   font-family: 'Roboto';
+   src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+   font-weight: 800;
+}
