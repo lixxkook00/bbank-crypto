@@ -212,7 +212,6 @@ a:hover{
 
 /* UTILS ELEMENTS STYLE */
 .primary-button{
-  /* font-family: 'Aristotelica'; */
   font-weight: 600;
   font-size: 14px;
   color: var(--black);
@@ -221,12 +220,16 @@ a:hover{
   justify-content: center;
 
   padding: 6px 10px;
-  /* border-radius: 8px; */
   min-width: 100px;
-  
+
   transition: all 0.3s;
   background-color: var(--primary);
-  /* background-image: linear-gradient(45deg, #00CDAA 0%, #22BFC6 33%, #5FA6F8 100%); */
+}
+
+.primary-button.only-border{
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  color: var(--white);
 }
 
 .primary-button+.primary-button{
@@ -240,8 +243,7 @@ a:hover{
 
 .primary-button:hover{
   cursor: pointer;
-  letter-spacing: 0.3px;
-  /* background-image: linear-gradient(45deg, #5FA6F8 0%, #22BFC6 33%, #00CDAA 100%); */
+  transform: scale(0.95)
 }
 
 .grid{
@@ -251,6 +253,10 @@ a:hover{
 
 .grid-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-4{
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .grid-2{
@@ -268,10 +274,15 @@ a:hover{
 .primary-title{
 	position: relative;
   display: inline-flex;
-	font-weight: 800;
+
+  color: var(--primary);
+
+	font-weight: 900;
 	font-size: 30px;
+  font-family: 'Roboto';
+
   text-transform: uppercase;
-	font-family: 'Aristotelica';
+  text-align: center;
 }
 
 .primary-title-line{
@@ -309,21 +320,26 @@ a:hover{
 
 .scroll-to-top{
   position: fixed;
-    bottom: 50px;
-    right: 20px;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background-image: linear-gradient(45deg, #00CDAA 0%, #22BFC6 33%, #5FA6F8 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.5s ease-in-out;
-    z-index: 1000;
+  bottom: 50px;
+  right: 20px;
+  
+  height: 40px;
+  width: 40px;
+
+  border: 1px solid var(--gray);
+  border-radius: 50%;
+  background-color: var(--primary);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  transition: all 0.5s ease-in-out;
+  z-index: 1000;
 }
 
 .scroll-to-top i{
-  color: rgba(255, 255, 255, 0.506);
+  color: var(--black);
   transition: all 0.5s ease-in-out;
 }
 

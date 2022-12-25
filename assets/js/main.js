@@ -53,16 +53,16 @@ window.addEventListener('load', (event) => {
 
 
 // SLIDER
-var swiper4 = new Swiper(".swiper-product-1", {
+var swiperLogoText = new Swiper(".swiper-logo-text", {
     slidesPerView: 3,
     spaceBetween: 10,
     // auto
     autoplay: {
-        delay: 500,
+        delay: 10,
         disableOnInteraction: false,
     },
-    loop:true,
-    loopedSlides: 50,
+    loop: true,
+    loopedSlides: 100,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -71,18 +71,22 @@ var swiper4 = new Swiper(".swiper-product-1", {
     breakpoints: {
         // when window width is >= 480px
         120: {
-        slidesPerView: 2,
-        spaceBetween: 2
+        slidesPerView: 3,
+        spaceBetween: 20
         },
         // when window width is >= 640px
        // when window width is >= 640px
         740: {
-        slidesPerView: 2,
-        spaceBetween: 10
+            slidesPerView: 4,
+            spaceBetween: 30
         },
         1023: {
-        slidesPerView: 6,
-        spaceBetween: 20
+            slidesPerView: 9,
+            spaceBetween: 40
+        },
+        1444: {
+            slidesPerView: 11,
+            spaceBetween: 40
         }
     },
 });

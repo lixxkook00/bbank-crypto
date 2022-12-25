@@ -2,7 +2,7 @@ html,body{
     background: var(--white);
 }
 
-/* HEADER */
+/*********************************** HEADER ***********************************/
 .header{
 	position: fixed;
 	top: 0;
@@ -36,5 +36,131 @@ html,body{
     cursor: pointer;
 }
 
+/*********************************** INTRO ***********************************/
+.intro{
+    background: url(../images/intro-bg.png) no-repeat center center;
+    background-size: auto 100%;
 
+    height: 95vh;
+    width: 100vw;
+}
+
+.intro-title{
+    line-height: 36px;
+    font-weight: 800;
+    font-size: 38px;
+}
+
+.intro-desc{
+    margin-top: 20px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.intro-button{
+    margin-top: 20px;
+}
+
+.intro-primary-text{
+    font-weight: 900;
+    color: var(--primary);
+    font-size: 50px;
+}
+
+.logo-slide{
+    height: 5vh;
+    width: 100%;
+    background-color: var(--primary);
+}
+
+.intro-right img+img{
+    margin-left: 8px;
+}
+
+/******************************* PRIMARY ELEMENT ******************************/
+.primary-background{
+    background: url(/assets/images/big-background.jpg) no-repeat top center;
+    background-size: 100% auto;
+}
+
+.primary-block{
+    padding: 30px 0;
+}
+
+.primary-block+.primary-block{
+    padding-top: 0px;
+}
+
+.primary-decs{
+    text-align: center;
+    font-weight: 500;
+}
+
+.text{
+    display: flex;
+    text-align: justify;
+}
+
+.text+.text{
+    margin-top: 10px;
+}
+
+.text-li{
+    position: relative;
+    padding-left: 20px;
+}
+
+.text-li::before{
+    content: "";
+
+    position: absolute;
+    top: 30%;
+    left: 7px;
+
+    height: 5px;
+    width: 5px;
+
+    background-color: var(--primary);
+
+    transform: translateY(-50%);
+}
+
+.border-box{
+    padding: 15px;
+    border: 1px solid var(--primary);
+}
+
+.border-box+.border-box{
+    margin-top: 10px;
+}
+
+.border-box-title{
+    text-transform: uppercase;
+    font-weight: 800;
+    color: var(--primary);
+
+    margin-bottom: 5px;
+}
+
+/**************************** ABOUT US ***************************/
+.about-box-wrapper{
+    margin: 40px 0 20px;
+}
+
+.about-box{
+    background-color: #141B22;
+    padding: 20px;
+    height: 160px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+/**************************** STP ACCOUNT TRANSACTION ***************************/
+.stp .border-box{
+    height: 48%;
+}
 
