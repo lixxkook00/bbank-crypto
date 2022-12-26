@@ -68,7 +68,7 @@
     }
 
     .policy-package:hover{
-        margin-bottom: 180px;
+        margin-bottom: 160px;
     }
 
     .tokenomic{
@@ -131,6 +131,14 @@
 
     .team-box{
         margin: 0;
+    }
+
+    .policy-package{
+        margin-bottom: 0;
+    }
+
+    .policy-package-price {
+        font-size: 19px;
     }
 }
 

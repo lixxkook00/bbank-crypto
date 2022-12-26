@@ -58,11 +58,11 @@ var swiperLogoText = new Swiper(".swiper-logo-text", {
     spaceBetween: 10,
     // auto
     autoplay: {
-        delay: 10,
+        delay: 100,
         disableOnInteraction: false,
     },
     loop: true,
-    loopedSlides: 100,
+    loopedSlides: 50,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -81,12 +81,12 @@ var swiperLogoText = new Swiper(".swiper-logo-text", {
             spaceBetween: 30
         },
         1023: {
-            slidesPerView: 9,
-            spaceBetween: 40
+            slidesPerView: 8,
+            spaceBetween: 60
         },
         1444: {
-            slidesPerView: 11,
-            spaceBetween: 40
+            slidesPerView: 10,
+            spaceBetween: 80
         }
     },
 });

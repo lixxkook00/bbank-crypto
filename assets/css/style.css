@@ -9,21 +9,20 @@ html,body{
 
 /*********************************** HEADER ***********************************/
 .header{
-	position: fixed;
-	top: 0;
-	left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 	width: 100vw;
-	background-color: rgba(0, 0, 0, 0.3);
-	z-index: 2;
+	/* background-color: rgba(0, 0, 0, 0.3); */
 }
 
 .header-wrapper{
-    padding: 10px 5vw;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 5px 5vw;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
 }
 
 .header-logo{
-    width: 80px;
+    width: 120px;
     height: auto;
 }
 
@@ -53,7 +52,7 @@ html,body{
 .intro-title{
     line-height: 36px;
     font-weight: 800;
-    font-size: 38px;
+    font-size: 42px;
 }
 
 .intro-desc{
@@ -69,7 +68,7 @@ html,body{
 .intro-primary-text{
     font-weight: 900;
     color: var(--primary);
-    font-size: 50px;
+    font-size: 53px;
 }
 
 .logo-slide{
@@ -78,8 +77,23 @@ html,body{
     background-color: var(--primary);
 }
 
+.intro-right img{
+    transition: all 0.5s ease;
+    animation: intro-img 2s linear infinite alternate;
+}
+
+.intro-right img:nth-child(2){
+    animation-delay: 1s;
+}
+
 .intro-right img+img{
     margin-left: 8px;
+}
+
+@keyframes intro-img {
+    100%{
+        transform: translateY(-5px)
+    }
 }
 
 /******************************* PRIMARY ELEMENT ******************************/
@@ -249,6 +263,19 @@ html,body{
     justify-content: center;
 }
 
+.benefit-img{
+    transform: scale(0.7);
+    transition: all 0.3s ease;
+    animation: benefit-img ;
+}
+
+@keyframes benefit-img {
+    100%{
+        transform: scale(0.7) translateY(-10px);
+        filter: drop-shadow(0 0 0 rgba(255,255,255,.38));
+    }
+}
+
 /**************************** POTENTIAL ***************************/
 .potential-title {
     text-transform: uppercase;
@@ -316,7 +343,7 @@ html,body{
     background-color: #151A22;
     padding: 20px 50px 20px;
     cursor: pointer;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     flex-direction: column;
 
     border-top-left-radius: 5px;
@@ -327,6 +354,8 @@ html,body{
     border-top: 1px solid var(--primary);
 
     border-color: transparent;
+
+    margin-bottom: 150px;
 }
 
 .policy-package.bronze:hover {
@@ -351,7 +380,7 @@ html,body{
     left: -1px;
     z-index: -1;
     opacity: 0;
-    transition: all 1s ease-out;
+    transition: all 0.5s ease-out;
     text-align: center;
     width: calc(100% + 2px);
 
