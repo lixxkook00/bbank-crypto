@@ -447,3 +447,29 @@ html,body{
 .team-social i {
     color: #C1C3C4;
 }
+
+/* FOOTER */
+.footer{
+    padding-top: 150px !important;
+
+    background: url(../images/footer-bg.png) no-repeat top right;
+    background-size: cover;
+}
+
+.footer .intro-desc{
+    margin-top: 0;
+}
+
+.footer-logo{
+    width: 30vw;
+    max-width: 200px;
+}
+
+.footer-social+.footer-social{
+    margin-left: 10px;
+}
+
+.footer-social-img{
+    width: 10vw;
+    max-width: 70px;
+}

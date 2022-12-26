@@ -138,6 +138,10 @@
         font-size: 24px;
         line-height: 30px;
     }
+
+    .footer{
+        padding-top: 20px !important;
+    }
 }
 
 /* 500*/
