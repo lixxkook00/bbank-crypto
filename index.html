@@ -505,7 +505,7 @@
                     expected to increase bba price
                 </div>
 
-                <img src="/assets/images/vectordecor.png" alt="" class="price-maps">
+                <canvas id="myChart"></canvas>
             </div>
         </section>
 
@@ -1011,6 +1011,63 @@
 
 <script src="./assets/js/main.js"></script>
 
+<script src="./assets/js/Chart.js"></script>
+
 <script>
+    const ctx = document.getElementById('myChart').getContext("2d");
+
+    const gradient = ctx.createLinearGradient(270, 180, 180, 0);
+    gradient.addColorStop(0.2, "#5BAF0E");
+    gradient.addColorStop(0.4, "#ffffff");
+    gradient.addColorStop(0.6, "#5BAF0E");
+
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Q1/2023', 'Q2-Q3/2023', 'Q4/2023', 'Q1/2024', 'Q2-Q4/2024', '2025'],
+            datasets: [{
+                label: ['$'],
+                data: [0.01, 2, 15, 50, 100, 1000],
+                maxBarThickness: 40,
+                backgroundColor: [
+                    gradient,
+                    gradient,
+                    gradient,
+                    gradient,
+                    gradient,
+                    gradient
+                ],
+                borderColor: [
+                    'transparent',
+                    'transparent',
+                    'transparent',
+                    'transparent',
+                    'transparent',
+                    'transparent'
+                ],
+                minBarLength: 10,
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    grid: {
+                        color: 'gray',
+                        borderColor: 'gray',
+                        tickColor: 'gray'
+                    }
+                }
+            },
+            intersect: false,
+            tooltips: {
+                callbacks: {
+                    label: function (tooltipItem, data) {
+                        return "hehe";
+                    }
+                }
+            }
+        }
+    });
 
 </script>
