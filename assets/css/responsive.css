@@ -33,6 +33,10 @@
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 
+    .grid-m-2{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .grid-5-2{
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -61,6 +65,10 @@
 
     .benefit .primary-title-white{
         margin-top: 10px;
+    }
+
+    .policy-package:hover{
+        margin-bottom: 170px;
     }
 }
 
