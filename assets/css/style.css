@@ -468,10 +468,12 @@ html,body{
 
 .team-social{
     margin-top: 20px;
+    z-index: 10;
 }
 
 .team-social i {
     color: #C1C3C4;
+    font-size: 20px;
     transition: all 0.2s linear;
 }
 
