@@ -318,29 +318,52 @@ html,body{
     cursor: pointer;
     transition: all 1s ease;
     flex-direction: column;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+    border-right: 1px solid var(--primary);
+    border-left: 1px solid var(--primary);
+    border-top: 1px solid var(--primary);
+
+    border-color: transparent;
+}
+
+.policy-package.bronze:hover {
+    border-color: #FFE59A !important;
+}
+
+.policy-package.silver:hover {
+    border-color: #D2E9E4 !important;
+}
+
+.policy-package.gold:hover {
+    border-color: #FFF57D !important;
+}
+
+.policy-package.platinum:hover {
+    border-color: #F6C2FC !important;
 }
 
 .policy-package-content{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: -1px;
     z-index: -1;
     opacity: 0;
-    transition: all 1s ease;
+    transition: all 1s ease-out;
     text-align: center;
+    width: calc(100% + 2px);
 
     padding: 15px;
     padding-top: 10px;
 
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-
     border-right: 1px solid var(--primary);
     border-left: 1px solid var(--primary);
     border-bottom: 1px solid var(--primary);
-
     border-color: transparent;
-    border-width: 0.1px;
 }
 
 .policy-package:hover .policy-package-content.bronze{
