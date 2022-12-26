@@ -117,16 +117,16 @@ html,body{
 }
 
 .text-li::before{
-    content: "";
+    content: "⬢";
 
     position: absolute;
-    top: 30%;
-    left: 7px;
+    top: 10px;
+    left: 0;
 
-    height: 5px;
-    width: 5px;
+    /* height: 5px;
+    width: 5px; */
 
-    background-color: var(--primary);
+    color: var(--primary);
 
     transform: translateY(-50%);
 }
