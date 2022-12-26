@@ -338,22 +338,25 @@ html,body{
     border-right: 1px solid var(--primary);
     border-left: 1px solid var(--primary);
     border-bottom: 1px solid var(--primary);
+
+    border-color: transparent;
+    border-width: 0.1px;
 }
 
-.policy-package-content.bronze{
-    border-color: #FFE59A;
+.policy-package:hover .policy-package-content.bronze{
+    border-color: #FFE59A !important;
 }
 
-.policy-package-content.silver{
-    border-color: #D2E9E4;
+.policy-package:hover .policy-package-content.silver{
+    border-color: #D2E9E4 !important;
 }
 
-.policy-package-content.gold{
-    border-color: #FFF57D;
+.policy-package:hover .policy-package-content.gold{
+    border-color: #FFF57D !important;
 }
 
-.policy-package-content.platinum{
-    border-color: #F6C2FC;
+.policy-package:hover .policy-package-content.platinum{
+    border-color: #F6C2FC !important;
 }
 
 .policy-package-name{
@@ -376,7 +379,7 @@ html,body{
 
 .policy-package:hover .policy-package-content{
     top: 99.5%;
-    /* position: relative; */
+    border-width: 1px;
     opacity: 1;
     z-index: 1;
 }
@@ -463,6 +466,10 @@ html,body{
 .footer-logo{
     width: 30vw;
     max-width: 200px;
+}
+
+.footer-social{
+    cursor: pointer;
 }
 
 .footer-social+.footer-social{
