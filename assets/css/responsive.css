@@ -90,6 +90,48 @@
         left: -23px;
         transform: translateY(-50%);
     }
+
+    .roadmap{
+        background-image: none;
+        padding: 30px 0 !important;
+    }
+
+    .roadmap-item {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between !important;
+    }
+
+    .roadmap-wrapper::before{
+        height: 100%;
+        width: 3px;
+        top: 0;
+        left: 30px;
+        transform: translateX(-50%);
+    }
+
+    .roadmap-item-content{
+        width: 80vw;
+        margin: 0px 0 0px 50px;
+    }
+
+    .roadmap-item-content::before{
+        border-left: none;
+        border-top: 1px dashed #fff;
+        width: 50px;
+        height: 0;
+        top: 50%;
+        left: 0;
+        transform: translateX(-100%);
+    }
+
+    .roadmap-text{
+        min-height: 60px;
+    }
+
+    .team-box{
+        margin: 0;
+    }
 }
 
 
@@ -100,7 +142,9 @@
         display: none !important;
     }
 
-    
+    .roadmap-item-content::before{
+        width: 120px;
+    }
 }
 
 /* Mobile Only */

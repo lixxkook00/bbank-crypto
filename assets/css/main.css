@@ -290,21 +290,25 @@ a:hover{
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-4{
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.grid-5-2{
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  justify-items: center;
-}
-
 .grid-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid-3{
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-4{
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-6{
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.grid-5-2{
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  justify-items: center;
 }
 
 .grid-1-2{
