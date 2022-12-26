@@ -70,6 +70,25 @@
     .policy-package:hover{
         margin-bottom: 170px;
     }
+
+    .tokenomic{
+        background-image: none;
+    }
+
+    .tokenomic-value{
+        font-size: 26px;
+        margin-left: 4px;
+    }
+
+    .tokenomic-box {
+        padding: 15px 20px 15px 10vw;
+    }
+
+    .tokenomic-li::before {
+        top: 50%;
+        left: -23px;
+        transform: translateY(-50%);
+    }
 }
 
 
@@ -87,6 +106,27 @@
 @media (max-width: 739px) {
     .hidden-m {
         display: none !important;
+    }
+
+    .intro-right{
+        margin-top: 5vh;
+    }
+
+    .intro-button{
+        justify-content: center;
+    }
+
+    .intro-left{
+        width: 100%;
+    }
+
+    .intro-desc{
+        width: 100%;
+        text-align: center;
+    }
+
+    .intro-right img {
+        width: 50%;
     }
 }
 

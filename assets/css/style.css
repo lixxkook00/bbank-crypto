@@ -190,10 +190,10 @@ html,body{
     content: "⬢";
     position: absolute;
     color: var(--secondary);
-    top: calc(40% - 10px);
+    top: 50%;
     left: -20px;
     font-size: 22px;
-    transform: -50%;
+    transform: translateY(-50%);
 }
 
 .tokenomic-title{
