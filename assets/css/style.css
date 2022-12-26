@@ -410,3 +410,40 @@ html,body{
 .policy-package-percent{
     font-size: 18px;
 }
+
+
+/* TEAM */
+.team-box{
+  padding: 20px;
+  margin: 0 5px;
+  background-color: #131B22;
+}
+
+.team-avt{
+    width: 100px;
+}
+
+.team-name{
+    color: var(--primary);
+    font-weight: 700;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.team-position{
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.team-social+.team-social{
+    margin-left: 10px;
+}
+
+.team-social{
+    margin-top: 20px;
+}
+
+.team-social i {
+    color: #C1C3C4;
+}

@@ -424,3 +424,8 @@ a:hover{
 input:focus-visible{
   outline: none;
 }
+
+
+img.avt{
+  border-radius: 50%;
+}
