@@ -259,6 +259,11 @@ a:hover{
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.grid-5-2{
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  justify-items: center;
+}
+
 .grid-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -271,18 +276,26 @@ a:hover{
   grid-template-columns : 60% 39%;
 }
 
+.grid-2-3{
+  grid-template-columns : 39% 60%;
+}
+
 .primary-title{
 	position: relative;
-  display: inline-flex;
-
-  color: var(--primary);
-
+	display: inline-flex;
+	color: var(--primary);
 	font-weight: 900;
 	font-size: 30px;
-  font-family: 'Roboto';
+	line-height: 26px;
+	font-family: 'Roboto';
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 20px;
+}
 
-  text-transform: uppercase;
-  text-align: center;
+.primary-title-white{
+  color: var(--white);
+  margin-left: 10px;
 }
 
 .primary-title-line{

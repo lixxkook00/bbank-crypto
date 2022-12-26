@@ -2,6 +2,11 @@ html,body{
     background: var(--white);
 }
 
+.secondary-text{
+    color: var(--secondary);
+    font-weight: 700;
+}
+
 /*********************************** HEADER ***********************************/
 .header{
 	position: fixed;
@@ -80,15 +85,16 @@ html,body{
 /******************************* PRIMARY ELEMENT ******************************/
 .primary-background{
     background: url(/assets/images/big-background.jpg) no-repeat top center;
-    background-size: 100% auto;
+    background-size: cover;
 }
 
 .primary-block{
     padding: 30px 0;
+    display: flex;
 }
 
 .primary-block+.primary-block{
-    padding-top: 0px;
+    padding-top: 40px;
 }
 
 .primary-decs{
@@ -144,7 +150,7 @@ html,body{
 
 /**************************** ABOUT US ***************************/
 .about-box-wrapper{
-    margin: 40px 0 20px;
+    margin: 40px 0 00px;
 }
 
 .about-box{
@@ -159,8 +165,144 @@ html,body{
     text-align: center;
 }
 
-/**************************** STP ACCOUNT TRANSACTION ***************************/
+/************************* STP ACCOUNT TRANSACTION ************************/
 .stp .border-box{
     height: 48%;
 }
 
+.stp-text{
+    padding-right: 20px;
+}
+
+/**************************** TOKENOMIC ***************************/
+.tokenomic{
+    margin-top: 20px;
+
+    background: url(../images/token-bg.png) no-repeat top right;
+    background-size: contain;
+}
+
+.tokenomic-li{
+    position: relative;
+}
+
+.tokenomic-li::before{
+    content: "⬢";
+    position: absolute;
+    color: var(--secondary);
+    top: calc(40% - 10px);
+    left: -20px;
+    font-size: 22px;
+    transform: -50%;
+}
+
+.tokenomic-title{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.tokenomic-value{
+    color: var(--secondary);
+    font-weight: 700;
+    font-size: 28px;
+    margin-left: 10px;
+}
+
+.tokenomic-box{
+    padding: 15px 20px 15px 5vw;
+    background-color: #8ec84210;
+    margin: 20px 0 40px;
+}
+
+/**************************** ALLOCATE ***************************/
+
+.allocate img{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+
+    max-width: 850px;
+}
+
+/**************************** BENEFIT ***************************/
+.benefit{
+    margin-top: 30px;
+}
+
+.benefit .primary-title{
+    text-transform: capitalize;
+}
+
+.benefit .primary-title-white{
+    font-size: 36px;
+}
+
+.benefit-name{
+    text-align: center;
+
+    height: 48px;
+
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/**************************** POTENTIAL ***************************/
+.potential-title {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.potential-content{
+    padding-left: 4vw;
+}
+
+.potential-ul .tokenomic-li{
+    padding-left: 40px;
+}
+
+.potential-ul .tokenomic-li::before {
+    left: 10px;
+    font-size: 26px;
+}
+
+.potential-ul .tokenomic-title{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.potential-ul .tokenomic-li+.tokenomic-li{
+    margin-top: 20px;
+}
+
+.deposit-box{
+    padding: 10px;
+    text-align: left;
+}
+
+.deposit-rate-li{
+    position: relative;
+}
+
+.deposit-rate-li+.deposit-rate-li{
+    margin-top: 4px;
+}
+
+.deposit-rate-li::before {
+    content: "⬢";
+    position: absolute;
+    color: var(--primary);
+    top: 10px;
+    left: -20px;
+    font-size: 22px;
+    transform: translateY(-50%);
+}
+
+.deposit-rate .border-box{
+    padding: 10px;
+    padding-left: 40px;
+    border-radius: 8px;
+}
