@@ -301,6 +301,7 @@ html,body{
     transform: translateY(-50%);
 }
 
+.policy .border-box,
 .deposit-rate .border-box{
     padding: 10px;
     padding-left: 40px;
