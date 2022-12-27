@@ -4,7 +4,7 @@ html,body{
    background-color: #07091A;
    color: #fff;
    overflow-x: hidden;
-   font-family: 'Roboto';
+   font-family: 'Montserrat';
 }
 
 /* .soft-menu__item a{
@@ -81,11 +81,11 @@ a:hover{
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #1C1421;
+  background-color: #07091A;
   width: 290px;
   height: 100vh;
   -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  transform: translateX(-100%);
   -webkit-transition: all linear 0.3s;
   transition: all linear 0.3s;
 }
@@ -102,9 +102,9 @@ a:hover{
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 12px 0 12px 18px;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 15px 0 15px 18px;
   border-top: 1px solid rgba(221, 221, 221, 0.228);
 }
 
@@ -112,7 +112,7 @@ a:hover{
   position: relative;
   color: #fff !important;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .soft-menu__item i {
@@ -467,4 +467,24 @@ input:focus-visible{
 
 img.avt{
   border-radius: 50%;
+}
+
+.animate__delay-0_1s{
+  animation-delay: 0.1s;
+}
+
+.animate__delay-0_2s{
+  animation-delay: 0.2s;
+}
+
+.animate__delay-0_3s{
+  animation-delay: 0.3s;
+}
+
+.animate__delay-0_4s{
+  animation-delay: 0.4s;
+}
+
+.animate__delay-0_5s{
+  animation-delay: 0.5s;
 }

@@ -66,9 +66,10 @@ html,body{
 }
 
 .intro-primary-text{
-    font-weight: 900;
+    font-weight: 800;
     color: var(--primary);
     font-size: 53px;
+    font-family: ''Roboto'';
 }
 
 .logo-slide{
@@ -266,13 +267,29 @@ html,body{
 .benefit-img{
     transform: scale(0.7);
     transition: all 0.3s ease;
-    animation: benefit-img ;
+    animation: benefit-img 2s linear infinite alternate;
+}
+
+.benefit-box:nth-child(2) .benefit-img{
+    animation-delay: 0.4s;
+}
+
+.benefit-box:nth-child(3) .benefit-img{
+    animation-delay: 0.8s;
+}
+
+.benefit-box:nth-child(4) .benefit-img{
+    animation-delay: 1.2s;
+}
+
+.benefit-box:nth-child(5) .benefit-img{
+    animation-delay: 1.6s;
 }
 
 @keyframes benefit-img {
     100%{
         transform: scale(0.7) translateY(-10px);
-        filter: drop-shadow(0 0 0 rgba(255,255,255,.38));
+        filter: drop-shadow(0 0 20px #F1BE57);
     }
 }
 
@@ -293,7 +310,7 @@ html,body{
 
 @keyframes glow-lava-hole {
     0% {
-        box-shadow: 0 0 1px 1px #1355cf6c, 0 0 1px 1px #1355cf6c, 0 0 1px 1px #1355cf6c;
+        box-shadow: 0 0 1px 1px #ffffff, 0 0 1px 1px #ffffff, 0 0 1px 1px #ffffff;
     }
 
     100% {
@@ -590,8 +607,9 @@ html,body{
 }
 
 .roadmap-phase{
-    font-weight: 600;
+    font-weight: 800;
     padding-bottom: 10px;
+    text-align: center;
 }
 
 .roadmap-item{
@@ -673,7 +691,7 @@ html,body{
 }
 
 .roadmap-text{
-    font-size: 14px;
+    font-size: 12px;
     min-height: 126px;
     text-align: center;
 }
