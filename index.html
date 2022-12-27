@@ -9,6 +9,7 @@
     <title>BBank Crypto</title>
 
     <link rel="stylesheet" href="./assets/css/utils.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
     <link rel="stylesheet" href="./assets/css/fontawesome-6.1/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
@@ -725,7 +726,79 @@
                     expected to increase bba price
                 </div>
 
-                <canvas id="myChart"></canvas>
+                <div class="chart">
+                    <img src="/assets/images/chart-bg.png" alt="" class="chart-bg">
+
+                    <div class="date-wrapper">
+                        <div class="chart-line chart-line--1 ">
+                            Q1/2023
+                        </div>
+
+                        <div class="chart-line chart-line--2 ">
+                            Q2-Q3/2023
+                        </div>
+
+                        <div class="chart-line chart-line--3 ">
+                            Q4/2023
+                        </div>
+
+                        <div class="chart-line chart-line--4 ">
+                            Q1/2024
+                        </div>
+
+                        <div class="chart-line chart-line--5 ">
+                            Q2-Q4/2024
+                        </div>
+
+                        <div class="chart-line chart-line--6 ">
+                            2025
+                        </div>
+                    </div>
+
+                    <div class="chart-wrapper">
+                        <div class="chart-line chart-line--1 wow slideInUp animate__animated animate__slideInUp">
+                            <img src="/assets/images/chart-line-1.png" alt="">
+                            <div class="chart-value">
+                                $0.01
+                            </div>
+                        </div>
+
+                        <div class="chart-line chart-line--2 wow slideInUp animate__animated animate__slideInUp">
+                            <img src="/assets/images/chart-line-2.png" alt="">
+                            <div class="chart-value">
+                                $0.5-$2
+                            </div>
+                        </div>
+
+                        <div class="chart-line chart-line--3 wow slideInUp animate__animated animate__slideInUp">
+                            <img src="/assets/images/chart-line-3.png" alt="">
+                            <div class="chart-value">
+                                $3-$15
+                            </div>
+                        </div>
+
+                        <div class="chart-line chart-line--4 wow slideInUp animate__animated animate__slideInUp">
+                            <img src="/assets/images/chart-line-4.png" alt="">
+                            <div class="chart-value">
+                                $20-$50
+                            </div>
+                        </div>
+
+                        <div class="chart-line chart-line--5 wow slideInUp animate__animated animate__slideInUp">
+                            <img src="/assets/images/chart-line-5.png" alt="">
+                            <div class="chart-value">
+                                $60-$100
+                            </div>
+                        </div>
+
+                        <div class="chart-line chart-line--6 wow slideInUp animate__animated animate__slideInUp">
+                            <img src="/assets/images/chart-line-6.png" alt="">
+                            <div class="chart-value">
+                                $200-$1000
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -1231,63 +1304,18 @@
 
 <script src="./assets/js/main.js"></script>
 
-<script src="./assets/js/Chart.js"></script>
+<script src="./assets/js/wow.min.js"></script>
 
 <script>
-    const ctx = document.getElementById('myChart').getContext("2d");
-
-    const gradient = ctx.createLinearGradient(270, 180, 180, 0);
-    gradient.addColorStop(0.2, "#5BAF0E");
-    gradient.addColorStop(0.4, "#ffffff");
-    gradient.addColorStop(0.6, "#5BAF0E");
-
-    new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ['Q1/2023', 'Q2-Q3/2023', 'Q4/2023', 'Q1/2024', 'Q2-Q4/2024', '2025'],
-            datasets: [{
-                label: ['$'],
-                data: [0.01, 2, 15, 50, 100, 1000],
-                maxBarThickness: 40,
-                backgroundColor: [
-                    gradient,
-                    gradient,
-                    gradient,
-                    gradient,
-                    gradient,
-                    gradient
-                ],
-                borderColor: [
-                    'transparent',
-                    'transparent',
-                    'transparent',
-                    'transparent',
-                    'transparent',
-                    'transparent'
-                ],
-                minBarLength: 10,
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                y: {
-                    grid: {
-                        color: 'gray',
-                        borderColor: 'gray',
-                        tickColor: 'gray'
-                    }
-                }
-            },
-            intersect: false,
-            tooltips: {
-                callbacks: {
-                    label: function (tooltipItem, data) {
-                        return "hehe";
-                    }
-                }
-            }
-        }
+    /*  
+           INIT WOWJS
+        */
+    wow = new WOW({
+        boxClass: "wow", // default
+        animateClass: "animated", // default
+        offset: 0, // default
+        mobile: true, // default
+        live: true, // default
     });
-
+    wow.init();
 </script>

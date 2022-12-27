@@ -138,7 +138,19 @@
     }
 
     .policy-package-price {
-        font-size: 19px;
+        font-size: 18px;
+    }
+
+    .chart-value{
+        display: flex;
+        justify-content: center;
+        min-width: 100px;
+        font-size: 12px;
+    }
+
+    .date-wrapper .chart-line{
+        font-size: 10px;
+        transform: translate(-40%,90%);
     }
 }
 

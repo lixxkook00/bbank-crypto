@@ -723,3 +723,135 @@ html,body{
   opacity: 1;
   transition: width 0.2s linear, height 0.15s 0.2s linear, opacity 0s;   
 }
+
+.footer-social{
+    transition: all 0.5s linear;
+}
+
+@keyframes buzz-out-on-hover {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+
+.footer-social:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+    animation: buzz-out-on-hover 1s linear infinite alternate;
+}
+
+/* CHART */
+
+.chart{
+    position: relative;
+}
+
+.chart-wrapper{
+    position: absolute;
+    bottom: 4%;
+    left: 0;
+
+    height: 96%;
+    width: 100%;
+
+    padding-left: 10%;
+
+    overflow: hidden;
+}
+
+.chart-line{
+    position: absolute;
+    bottom: 0;
+    width: 4.5%;
+    transition: all 0.5s ease;
+    display: flex;
+    align-items: end;
+}
+
+.chart-line--2{
+    left: 25%;
+}
+
+.chart-line--3{
+    left: 40%;
+}
+
+.chart-line--4{
+    left: 55%;
+}
+
+.chart-line--5{
+    left: 70%;
+}
+
+.chart-line--6{
+    left: 85%;
+}
+
+.chart-value{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-100%);
+
+    font-weight: 800;
+    font-size: 20px;
+    color: var(--secondary);
+}
+
+.date-wrapper{
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 10%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+}
+
+.date-wrapper .chart-line{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    min-width: 100px;
+    transition: all 0.5s;
+    transform: translate(-20%,30%);
+}
