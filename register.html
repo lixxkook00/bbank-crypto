@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome-6.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/utils.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- HEADER MOBILE -->
+    <div class="header-mobile hide-on-pc">
+        <a href="/">
+            <img class="header-mobile-logo" src="./assets/images/logo.png" alt="">
+        </a>
+        <div class="header-mobile-left">
+            <div class="header-mobile-icon centering" onclick="toggleNavMobile()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAV MOBILE -->
+    <div class="soft-menu" onclick="toggleNavMobile()">
+        <ul class="soft-menu__list" onclick="{(e) => e.stopPropagation();}">
+            <li class="soft-menu__item soft-menu__item--active">
+                <a class="" href="#about">
+                    <i class="fa-solid fa-house"></i> Dashboard
+                </a>
+            </li>
+            <li class="soft-menu__item hehe">
+                <a class="" href="#product">
+                    <i class="fa-sharp fa-solid fa-coins"></i> Staking pack
+                </a>
+            </li>
+            <li class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="#tutorial">
+                    <i class="fa-solid fa-wallet"></i> Wallet
+                </a>
+            </li>
+
+            <li class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="">
+                    <i class="fa-solid fa-money-bill-transfer"></i> Transaction
+                </a>
+            </li>
+
+            <div class="soft-menu__item soft-menu__item-sub">
+                <a class="ref-link" href="">
+                    <i class="fa-solid fa-right-to-bracket"></i> Sign Out
+                </a>
+            </div>
+        </ul>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header header-fixed hidden-m-t">
+        <div class="header-fixed-wrapper">
+            <div class="container">
+                <div class="align-items-center d-flex justify-content-between">
+                    <a href="/">
+                        <img src="./assets/images/logo.png" alt="" class="header-logo">
+                    </a>
+
+                    <a href="#" class="account d-flex align-items-center">
+                        <!-- Welcome! PhuGyPhuGy <i class="fa-solid fa-user mr-2"></i> -->
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="util-bg all-screen">
+        <div class="container h-100">
+            <div class="row h-100 centering">
+                <div class="col-lg-4">
+                    <div class="login-form">
+                        <form class="primary-form register">
+                            <div class="form-title">
+                                REGISTER
+                            </div>
+
+                            <div class="form-group">
+                                <div class="form-label">
+                                    User Name <span class="primary-text">*</span>
+                                </div>
+                                <input type="text" class="form-control primary-input" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="User name">
+                            </div>
+
+                            <div class="form-group">
+                                <div class="form-label">
+                                    Full Name <span class="primary-text">*</span>
+                                </div>
+                                <input type="text" class="form-control primary-input" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Full name">
+                            </div>
+
+                            <div class="form-group">
+                                <div class="form-label">
+                                    Email <span class="primary-text">*</span>
+                                </div>
+                                <input type="email" class="form-control primary-input" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="E-Mail Address">
+                            </div>
+
+                            <div class="form-group">
+                                <div class="form-label">
+                                    Password <span class="primary-text">*</span>
+                                </div>
+                                <input type="password" class="form-control primary-input" id="exampleInputPassword1"
+                                    placeholder="Password">
+                            </div>
+
+
+                            <div class="form-group">
+                                <div class="form-label">
+                                    Password Confirm <span class="primary-text">*</span>
+                                </div>
+                                <input type="password" class="form-control primary-input" id="exampleInputPassword1"
+                                    placeholder="Password Confirm">
+                            </div>
+
+                            <div class="form-group">
+                                <div class="form-label">
+                                    Sponsor
+                                </div>
+                                <input type="text" class="form-control primary-input" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Sponsor">
+                            </div>
+
+                            <button type="submit" class="primary-blue-button w-100">Continue</button>
+
+                            <div class="centering ">
+                                <div class="form-check w-100 mt-2">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label w-100 d-flex" for="exampleCheck1">
+                                        I have read and agree to the &nbsp;
+                                        <a href="" class="primary-text">
+                                            Privacy Policy
+                                        </a>
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    const $query = document.querySelector.bind(document)
+    const $$query = document.querySelectorAll.bind(document)
+
+    const toggleNavMobile = () => {
+        $query('.soft-menu').classList.toggle('open')
+        $query('.soft-menu__list').classList.toggle('open')
+    }
+
+    $$query('.soft-menu__item').forEach((element) => {
+        element.onclick = () => {
+            toggleNavMobile()
+        }
+    })
+</script>

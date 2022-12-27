@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome-6.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/utils.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- HEADER MOBILE -->
+    <div class="header-mobile hide-on-pc">
+        <a href="/">
+            <img class="header-mobile-logo" src="./assets/images/logo.png" alt="">
+        </a>
+        <div class="header-mobile-left">
+            <div class="header-mobile-icon centering" onclick="toggleNavMobile()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAV MOBILE -->
+    <div class="soft-menu" onclick="toggleNavMobile()">
+        <ul class="soft-menu__list" onclick="{(e) => e.stopPropagation();}">
+            <li class="soft-menu__item soft-menu__item--active">
+                <a class="" href="#about">
+                    <i class="fa-solid fa-house"></i> Dashboard
+                </a>
+            </li>
+            <li class="soft-menu__item hehe">
+                <a class="" href="#product">
+                    <i class="fa-sharp fa-solid fa-coins"></i> Staking pack
+                </a>
+            </li>
+            <li class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="#tutorial">
+                    <i class="fa-solid fa-wallet"></i> Wallet
+                </a>
+            </li>
+
+            <li class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="">
+                    <i class="fa-solid fa-money-bill-transfer"></i> Transaction
+                </a>
+            </li>
+
+            <div class="soft-menu__item soft-menu__item-sub">
+                <a class="ref-link" href="">
+                    <i class="fa-solid fa-right-to-bracket"></i> Sign Out
+                </a>
+            </div>
+        </ul>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header header-fixed hidden-m-t">
+        <div class="header-fixed-wrapper">
+            <div class="container">
+                <div class="align-items-center d-flex justify-content-between">
+                    <a href="/">
+                        <img src="./assets/images/logo.png" alt="" class="header-logo">
+                    </a>
+
+                    <a href="#" class="account d-flex align-items-center">
+                        Welcome! PhuGyPhuGy <i class="fa-solid fa-user mr-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- main nav -->
+        <div class="nav-main d-flex align-items-center justify-content-between">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="nav-item-wrapper h-100 centering justify-content-between">
+                        <div class="nav-item">
+                            <i class="fa-solid fa-bars-progress"></i>
+                            Dashboard
+                        </div>
+                        <div class="nav-item">
+                            <i class="fa-solid fa-money-bill-trend-up"></i>
+                            Investment
+                        </div>
+                        <div class="nav-item">
+                            <i class="fa-solid fa-wallet"></i>
+                            Wallet
+                        </div>
+                        <div class="nav-item">
+                            <i class="fa-solid fa-right-left"></i>
+                            Transaction
+                        </div>
+                        <div class="nav-item">
+                            <i class="fa-solid fa-user"></i>
+                            Profile
+                        </div>
+                    </div>
+
+                    <div class="kyc">
+                        <i class="fa-regular fa-file"></i> KYC Application
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="dashboard-bg">
+        <div class="container">
+            <!-- INFOR DASHBOARD -->
+            <div class="grid grid-1-2 grid-m-1">
+                <div class="dashboard-balance primary-box">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <img src="./assets/images/logo.png" alt="" class="dashboard-balance-logo">
+
+                        <div class="d-flex justify-content-center flex-column">
+                            <div class="dashboard-balance-title">
+                                TOKENS BALANCE
+                            </div>
+                            <div class="dashboard-balance-value dashboard-balance-value-large">
+                                1,000,000.00 <span class="dashboard-balance-currency">BBA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-balance-title mt-2 mb-1">
+                        YOUR CONTRIBUTION
+                    </div>
+                    <div class="d-flex">
+                        <div class="dashboard-balance-block d-flex justify-content-center flex-column">
+                            <div class="dashboard-balance-value">
+                                2,2364.69
+                            </div>
+                            <span class="dashboard-balance-currency">USDT</span>
+                        </div>
+
+                        <div class="dashboard-balance-block d-flex justify-content-center flex-column">
+                            <div class="dashboard-balance-value">
+                                2,2364.69
+                            </div>
+                            <span class="dashboard-balance-currency">BUSD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-2 grid-m-1 primary-box primary-box--black">
+                    <div class="token-infor">
+                        <div class="centering">
+                            <img src="./assets/images/logo-black.png" alt="" class="token-img">
+                        </div>
+
+                        <div class="dashboard-balance-value dashboard-balance-value-large text-center">
+                            <span class="value">1</span> ETH = <span class="value">1,000</span> BBA
+                        </div>
+                        <div class="dashboard-balance-value dashboard-balance-value-small text-center">
+                            <span class="value">1</span> ETH = <span class="value">245,05</span> USD
+                        </div>
+                    </div>
+
+                    <div class="token-infor">
+                        <div class="token-infor-li d-flex align-items-center justify-content-between">
+                            <div class="dashboard-balance-title">
+                                TOTAL SUPPLY
+                            </div>
+                            <div class="value">
+                                81,000,000
+                            </div>
+                        </div>
+
+                        <div class="token-infor-li d-flex align-items-center justify-content-between">
+                            <div class="dashboard-balance-title">
+                                TOKEN NAME
+                            </div>
+                            <div class="value">
+                                BBank
+                            </div>
+                        </div>
+
+                        <div class="token-infor-li d-flex align-items-center justify-content-between">
+                            <div class="dashboard-balance-title">
+                                TICKET SYMBOL
+                            </div>
+                            <div class="value">
+                                BBA
+                            </div>
+                        </div>
+
+                        <div class="centering mt-2">
+                            <div class="primary-button centering">
+                                <i class="fa-solid fa-download mr-2"></i> Dowload Whitepaper
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TRANSFER FORM -->
+            <div class="deposit pb-2">
+                <div class="deposit primary-box">
+
+                    <div class="deposit-form centering">
+                        <form action="action_page.php" method="post">
+
+                            <div class="container">
+
+                                <div class="centering">
+                                    <div class="profile-form-avt">
+                                        <img class="profile-form-avt-img"
+                                            src="https://uniontek.vn/assets/img/lanhdao/thuong.png" alt="">
+
+                                        <div class="profile-form-changeavt centering">
+                                            <i class="fa-solid fa-camera"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="login-form-div">
+                                    <label for="uname"><b>Phone Number</b></label>
+                                    <input type="text" placeholder="Amount" name="uname" required>
+                                </div>
+
+                                <div class="login-form-div">
+                                    <label for="uname"><b>Email</b></label>
+                                    <input type="text" placeholder="Amount" name="uname" required>
+                                </div>
+
+                                <div class="login-form-div">
+                                    <label for="uname"><b>Password</b></label>
+                                    <input type="text" placeholder="Amount" name="uname" required>
+                                </div>
+
+                                <div class="login-form-div">
+                                    <label for="uname"><b>Re-enter Password</b></label>
+                                    <input type="text" placeholder="Amount" name="uname" required>
+                                </div>
+
+                                <div class="d-flex justify-content-center">
+                                    <button type="submit" class="primary-button">UPDATE</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer footer-dashboard">
+        <div class="container">
+            <div class="centering">
+                <div class="centering-mobile">
+                    <img src="./assets/images/logo.png" alt="" class="footer-logo">
+                </div>
+            </div>
+            <div class="centering">
+                <div class="footer-block">
+                    <div class="centering-mobile footer-social d-flex align-items-cente justify-content-start">
+                        <div class="footer-social-icon centering">
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                        <div class="footer-social-icon centering">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                        <div class="footer-social-icon centering">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="footer-social-icon centering">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-verify">
+            Copyright © BBank | Designed by BBank Team.
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<script>
+    const $query = document.querySelector.bind(document)
+    const $$query = document.querySelectorAll.bind(document)
+
+    const toggleNavMobile = () => {
+        $query('.soft-menu').classList.toggle('open')
+        $query('.soft-menu__list').classList.toggle('open')
+    }
+
+    $$query('.soft-menu__item').forEach((element) => {
+        element.onclick = () => {
+            toggleNavMobile()
+        }
+    })
+</script>

@@ -218,6 +218,21 @@
     .dashboard-bg{
         padding-top: 55px;
     }
+
+    .deposit .wallet-control-item {
+        width: 49%;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    .deposit .wallet-control-item:not(:last-child) {
+        margin-right: 0px;
+    }
+
+    .wallet-control {
+        flex-wrap: wrap;
+        justify-content: space-between !important;
+    }
 }
 
 /* 500*/
