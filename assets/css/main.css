@@ -184,13 +184,7 @@ a:hover{
 
 .value{
   font-weight: 800;
-  font-size: 18px;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-image: linear-gradient(90deg, #825FF5 0%, #3B33A2 48%, #43D3D8 100%);
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  color: #075200;
 }
 
 .value-large{

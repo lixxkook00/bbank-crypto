@@ -210,6 +210,14 @@
     .born-images{
         margin: 10px 0 30px;
     }
+
+    .dashboard-package{
+        padding-bottom: 80px;
+    }
+
+    .dashboard-bg{
+        padding-top: 55px;
+    }
 }
 
 /* 500*/
