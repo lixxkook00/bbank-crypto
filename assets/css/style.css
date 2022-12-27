@@ -1425,12 +1425,6 @@ select:focus-visible{
 	 background-color: #825EF6;
 }
 
-.header-fixed{
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #075200;
-}
 
 .born-images{
   display: flex;
@@ -1475,4 +1469,66 @@ select:focus-visible{
     filter: drop-shadow(-2px 1px 7px var(--primary));
     transform: scale(1.25) translateY(5px);
   }
+}
+
+/* DASHBOARD */
+
+
+.header-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header-fixed img{
+    width: 80px;
+}
+
+.header-fixed-wrapper{
+    background-color: #075200;
+    padding: 2px 0;
+}
+
+.account{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.account i{
+    height: 25px;
+    width: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    margin-left: 10px;
+
+    background-color: var(--secondary);
+}
+
+.nav-main{
+    padding: 6px 0;
+    background-color: var(--white);
+    color: var(--primary);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.kyc{
+    font-weight: 500;
+    color: var(--black);
+    padding: 4px 10px;
+
+    border-radius: 5px;
+    border: 1px solid var(--gray);
+
+    transition: all 0.5s ease-in-out;
+}
+
+.kyc:hover{
+    cursor: pointer;
+    border-color: var(--primary);
+    background-color: var(--primary);
 }

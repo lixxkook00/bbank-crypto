@@ -10,9 +10,9 @@
 
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/fontawesome-6.1/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/utils.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 
@@ -62,27 +62,31 @@
 
     <!-- HEADER -->
     <header class="header header-fixed hidden-m-t">
-        <div class="header-wrapper align-items-center d-flex justify-content-between">
-            <a href="/">
-                <img src="./assets/images/logo.png" alt="" class="header-logo">
-            </a>
+        <div class="header-fixed-wrapper">
+            <div class="container">
+                <div class="align-items-center d-flex justify-content-between">
+                    <a href="/">
+                        <img src="./assets/images/logo.png" alt="" class="header-logo">
+                    </a>
 
-            <div class="header-nav d-flex">
-                <div class="header-nav-item centering active">
-                    Dashboard
+                    <a href="#" class="account d-flex align-items-center">
+                        PhuGyPhuGy <i class="fa-solid fa-user mr-2"></i>
+                    </a>
                 </div>
-                <div class="header-nav-item centering">
-                    Staking pack
+            </div>
+        </div>
+        <!-- main nav -->
+        <div class="nav-main d-flex align-items-center justify-content-between">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="nav-item-wrapper">
+
+                    </div>
+
+                    <div class="kyc">
+                        <i class="fa-regular fa-file"></i> KYC Application
+                    </div>
                 </div>
-                <div class="header-nav-item centering ">
-                    Wallet
-                </div>
-                <div class="header-nav-item centering">
-                    Transaction
-                </div>
-                <a href="#" class="primary-button d-flex align-items-center">
-                    <i class="fa-solid fa-user mr-2"></i> PhuGyPhuGy
-                </a>
             </div>
         </div>
     </header>
@@ -256,7 +260,7 @@
     </div>
 
     <!-- FOOTER -->
-    <section id="footer" class="footer centering primary-block flex-column">
+    <!-- <section id="footer" class="footer centering primary-block flex-column">
         <div class="centering">
             <img src="/assets/images/logo.png" alt="" class="footer-logo">
             <div class="centering">
@@ -280,7 +284,7 @@
         <div class="intro-desc">
             We are the best investment option for you
         </div>
-    </section>
+    </section> -->
 </body>
 
 </html>
